@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Idola Saya - Formulir Idola</title>
+    <link rel="stylesheet" href="UTS_Background.css">
+</head>
+<body>
+    <header>
+        <h1>GOAT YANG KALIAN BANGGAKAN</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Halaman Utama</a></li>
+            <li><a href="UTS_HalFormulir.html">Formulir Idola</a></li>
+            <li><a href="UTS_HalTabel.html">Tabel Idola</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Isi Data Idola</h2>
+        <form action="UTS_HalTabel.html" method="get">
+            <label for="nama">Nama Idola:</label>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir" required><br><br>
+
+            <label for="kategori">Liga Sepak Bola:</label>
+            <select id="kategori" name="kategori" required>
+                <option value="Artis">Laliga</option>
+                <option value="Olahragawan">Serie A</option>
+                <option value="Penyanyi">Bundesliga</option>
+                <option value="Anime">Premier League</option>
+                <option value="Anime">Eredivisie</option>
+                <option value="Anime">Saudi Pro League</option>
+                <option value="Anime">Major League Soccer</option>
+            </select><br><br>
+
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="male" name="gender" value="Male" required> Laki-laki
+            <input type="radio" id="female" name="gender" value="Female" required> Perempuan<br><br>
+
+            <label for="user">Username:</label>
+            <input type="text" id="user" name="user" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Website Idola Saya &copy; 2024</p>
+    </footer>
+</body>
+</html>
